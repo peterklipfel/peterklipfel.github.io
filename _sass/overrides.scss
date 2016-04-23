@@ -1,3 +1,18 @@
+$primary_color: #109174;
+$primary_accent_1: #4FAF9A;
+$primary_accent_2: #2E9981;
+$primary_accent_3: #07725A;
+$primary_accent_4: #005945;
+
+$complementary_1: #E19619;
+$complementary_1_accent_1: #FFCB74;
+$complementary_1_accent_2: #EEAF47;
+$complementary_1_accent_3: #B1730B;
+$complementary_1_accent_4: #8A5600;
+
+$complementary_2: #D41735;
+
+
 html {
   height: 100%;
 }
@@ -18,7 +33,7 @@ path {
 }
 
 path:first-child {
-    fill: yellow !important;
+    fill: $complementary_1 !important;
 
 }
 
@@ -28,15 +43,15 @@ circle {
 
 }
 
-.q0-9 { fill: rgb(197,27,125);  }
-.q1-9 { fill: rgb(222,119,174);  }
-.q2-9 { fill: rgb(241,182,218);  }
-.q3-9 { fill: rgb(253,224,239);  }
-.q4-9 { fill: rgb(247,247,247);  }
-.q5-9 { fill: rgb(230,245,208);  }
-.q6-9 { fill: rgb(184,225,134);  }
-.q7-9 { fill: rgb(127,188,65);  }
-.q8-9 { fill: rgb(77,146,33);  }
+.q0-9 { fill: $primary_color;  }
+.q1-9 { fill: $primary_accent_1;  }
+.q2-9 { fill: $primary_accent_2;  }
+.q3-9 { fill: $primary_accent_3;  }
+.q4-9 { fill: $primary_accent_4;  }
+.q5-9 { fill: $primary_accent_1;  }
+.q6-9 { fill: $primary_accent_2;  }
+.q7-9 { fill: $primary_accent_3;  }
+.q8-9 { fill: $primary_accent_4;  }
 
 
 
