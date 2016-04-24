@@ -33,12 +33,12 @@
       new_vel_x = this.vel_x + this.accel_x * this.normalizedTime()
       new_vel_y = this.vel_y + this.accel_y * this.normalizedTime()
       if(new_vel_x > 0){
-        this.vel_x = Math.max(new_vel_x, 1)
+        this.vel_x = Math.min(new_vel_x, 1)
       } else {
         this.vel_x = Math.max(new_vel_x, -1)
       }
       if(new_vel_y > 0){
-        this.vel_y = Math.max(new_vel_y, 1)
+        this.vel_y = Math.min(new_vel_y, 1)
       } else {
         this.vel_y = Math.max(new_vel_y, -1)
       }
@@ -123,10 +123,8 @@
   </script> 
     {% include header.html %}
 
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
+    <div class="container-fluid full">
+      {{ content }}
     </div>
 
     {% include footer.html %}

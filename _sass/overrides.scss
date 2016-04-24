@@ -13,6 +13,7 @@ $complementary_1_accent_4: #8A5600;
 $complementary_2: #D41735;
 
 $light_gray: #f9fafa;
+$dark_gray: #364441;
 
 @import url(https://fonts.googleapis.com/css?family=Nothing+You+Could+Do);
 
@@ -23,7 +24,7 @@ html {
 }
 
 body {
-  min-height: 100%;
+  height: 100%;
 }
 
 a {
@@ -36,6 +37,35 @@ a {
   }
 }
 
+.full {
+  min-height:100%;
+  padding: 0;
+}
+
+.jumbotron {
+  background: none;
+  color: $light-gray;
+}
+
+/* Vertical Divider in navbar */
+.navbar .divider-vertical {
+  height: 50px;
+  margin: 0 9px;
+  border-right: 1px solid #ffffff;
+  border-left: 1px solid #f2f2f2;
+}
+
+.navbar-inverse .divider-vertical {
+  border-right-color: #222222;
+  border-left-color: #111111;
+}
+
+@media (max-width: 767px) {
+  .navbar-collapse .nav > .divider-vertical {
+    display: none;
+  }
+}
+
 /* Background */
 .background {
   position: fixed;
@@ -43,7 +73,7 @@ a {
 }
 
 path {
-  stroke: #fff;
+  stroke: $dark-gray;
 }
 
 path:first-child {
@@ -68,9 +98,9 @@ circle {
 
 /* Header */
 
-.site-header{
-  background-color: $primary_color;
-  border-top: none;
+.navbar{
+  background-color: $light_gray;
+  border-radius: 0;
 }
 
 .site-nav {
@@ -83,11 +113,17 @@ circle {
   }
 }
 
-.site-title {
+.navbar-brand {
   font-family: 'Nothing You Could Do', cursive;
-  color: $light_gray;
+  color: $dark_gray;
   &:visited {
-    color: $light_gray;
+    color: $dark_gray;
   }
+}
+
+/* Footer */
+footer {
+  background-color: $dark-gray;
+  color: $light-gray;
 }
 
