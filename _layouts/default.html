@@ -47,12 +47,12 @@
       normalized_x = 2*((width+this.x)/width) - 3
       normalized_y = 2*((height+this.y)/height) - 3
 
-      if(width - 50 < this.x || this.x < 50){
+      if(width - (width*0.05) < this.x || this.x < width*0.05){
         this.accel_x = -1*Math.tan(normalized_x)
       } else {
         this.accel_x = 0
       }
-      if(height - 50 < this.y || this.y < 50){
+      if(height - (height*0.05) < this.y || this.y < height*0.05){
         this.accel_y = -1*Math.tan(normalized_y)
       } else {
         this.accel_y = 0
