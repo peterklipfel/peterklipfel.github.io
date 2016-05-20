@@ -1,0 +1,116 @@
+<script src="//d3js.org/d3.v3.min.js"></script>
+<script>
+
+var width = window.innerWidth
+         || document.documentElement.clientWidth
+         || document.body.clientWidth;
+
+var height = window.innerHeight
+          || document.documentElement.clientHeight
+          || document.body.clientHeight;
+
+function Point(x, y){
+  this.x = x;
+  this.y = y;
+  this.vel_x = Math.random()*0.5 - 0.25;
+  this.vel_y = Math.random()*0.5 - 0.25;
+  this.accel_x = 0;
+  this.accel_y = 0;
+  this.update_position = function(){
+    this.update_vel()
+    this.x = this.x + this.normalizedTime() * this.vel_x/7
+    this.y = this.y + this.normalizedTime() * this.vel_y/7
+  }
+  this.update_vel = function(){
+    this.update_accel()
+    new_vel_x = this.vel_x + this.accel_x * this.normalizedTime()
+    new_vel_y = this.vel_y + this.accel_y * this.normalizedTime()
+    if(new_vel_x > 0){
+      this.vel_x = Math.min(new_vel_x, 1)
+    } else {
+      this.vel_x = Math.max(new_vel_x, -1)
+    }
+    if(new_vel_y > 0){
+      this.vel_y = Math.min(new_vel_y, 1)
+    } else {
+      this.vel_y = Math.max(new_vel_y, -1)
+    }
+  }
+  this.update_accel = function(){
+    normalized_x = 2*((width+this.x)/width) - 3
+    normalized_y = 2*((height+this.y)/height) - 3
+
+    if(width - (width*0.05) < this.x || this.x < width*0.05){
+      this.accel_x = -1*Math.tan(normalized_x)
+    } else {
+      this.accel_x = 0
+    }
+    if(height - (height*0.05) < this.y || this.y < height*0.05){
+      this.accel_y = -1*Math.tan(normalized_y)
+    } else {
+      this.accel_y = 0
+    }
+  }
+  this.normalizedTime = function() {
+    return new Date().getTime()/1400000000000
+  }
+}
+
+function get_vertices(points) {
+  console.log(points)
+  points.map(function(p){ return [p.x, p.y] })
+}
+
+var vertices = d3.range(100).map(function(d) {
+  return new Point(Math.random() * width, Math.random() *height)
+});
+
+var voronoi = d3.geom.voronoi()
+    .clipExtent([[0, 0], [width, height]]);
+
+var svg = d3.select("body").append("svg").attr("class", "background")
+    .attr("width", width)
+    .attr("height", height)
+
+var path = svg.append("g").selectAll("path");
+
+svg.selectAll("circle")
+.data(vertices.map(function(p){ return [p.x, p.y] }).slice(1))
+  .enter().append("circle")
+    .attr("transform", function(d) { return "translate(" + d + ")"; })
+    .attr("r", 0);
+
+redraw();
+d3.timer(function() {
+  vertices.forEach(function(point, i){
+    point.update_position();
+  })
+  // Update circle positions.
+  svg.selectAll("circle")
+    .data(vertices.map(function(p){ return [p.x, p.y] }))
+      .attr("transform", function(d) { return "translate(" + d + ")"; });
+
+  // Update voronoi diagram.
+  svg.selectAll("path")
+      .data(d3.geom.voronoi( vertices.map(function(p){ return [p.x, p.y] }) ))
+      .attr("d", function(d) { return "M" + d.join("L") + "Z"; })
+})
+
+function redraw() {
+  path = path
+      .data(voronoi( vertices.map(function(p){ return [p.x, p.y] })), polygon);
+
+  path.exit().remove();
+
+  path.enter().append("path")
+      .attr("class", function(d, i) { return "q" + (i % 9) + "-9"; })
+      .attr("d", polygon);
+
+  path.order();
+}
+
+function polygon(d) {
+  return "M" + d.join("L") + "Z";
+}
+
+</script> 

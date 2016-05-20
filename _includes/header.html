@@ -17,11 +17,8 @@
         <li><a href="https://github.com/peterklipfel"><i class="fa fa-github" aria-hidden="true"></i></a></li>
         <li><a href="https://www.linkedin.com/in/peterklipfel"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
         <li class="divider-vertical"></li>
-        {% for my_page in site.pages %}
-          {% if my_page.title %}
-            <li><a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>
-          {% endif %}
-        {% endfor %}
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="/fun">Fun</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
