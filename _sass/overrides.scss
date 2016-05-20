@@ -33,17 +33,17 @@ a {
     color: $light_gray;
   }
   &:hover {
-    color: $complementary_1
+    color: $primary_accent_4;
+    text-decoration: none;
   }
 }
 
-.full {
+#wrapper {
   min-height:100%;
-  padding: 0;
 }
 
 .jumbotron {
-  background: none;
+  background: $primary_color;
   color: $light-gray;
 }
 
@@ -107,7 +107,7 @@ circle {
   .page-link {
     color: $light_gray;
     &:hover {
-      color: $complementary_1;
+      color: $complementary_2;
       text-decoration: none;
     }
   }
@@ -129,6 +129,15 @@ footer {
 
 /* Index */
 .section-header {
+  color: $light_gray;
+}
+
+/* Index */
+.about {
+  color: $dark_gray;
+}
+.tools {
+  background: $complementary_1;
   color: $light_gray;
 }
 
