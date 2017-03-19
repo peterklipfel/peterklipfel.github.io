@@ -226,12 +226,15 @@ hr.small {
   color: rgb(37,26,21)
 }
 
+.portfolio h5 {
+  color: rgb(37,26,21)
+}
+
 .portfolio-item {
     margin-bottom: 30px;
 }
 
 .img-portfolio {
-    margin: 0 auto;
 }
 
 .img-portfolio:hover {
