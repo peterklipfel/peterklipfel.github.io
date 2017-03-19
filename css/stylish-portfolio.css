@@ -13,11 +13,13 @@ body {
 }
 
 body {
-    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Catamaran", "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
-h1, h3 {
+/* I usually reserve h6 for special cases */
+h1, h2, h3, h4, h5 {
   color: #e4e2e7;
+  font-family: 'Nixie One', cursive;
 }
 
 .text-vertical-center {
@@ -65,6 +67,7 @@ h1, h3 {
 
 hr.small {
     max-width: 100px;
+    border-color: rgb(37,26,21);
 }
 
 /* Side Menu */
@@ -77,7 +80,7 @@ hr.small {
     height: 100%;
     transform: translateX(250px);
     overflow-y: auto;
-    background: #222128;
+    background-color: rgb(37,26,21);
     -webkit-transition: all 0.4s ease 0s;
     -moz-transition: all 0.4s ease 0s;
     -ms-transition: all 0.4s ease 0s;
@@ -171,6 +174,7 @@ hr.small {
 .about {
     padding: 50px 0;
     background-color: #e4e2e7;
+    font-family: "Cutive";
 }
 
 /* Services */
@@ -178,6 +182,10 @@ hr.small {
 .services {
     padding: 50px 0;
     background-color: #447379;
+}
+
+.services hr.small {
+    border-color: #e4e2e7;
 }
 
 .service-item {
@@ -200,7 +208,7 @@ hr.small {
     width: 100%;
     height: 400px;
     color: #fff;
-    background: url(../img/callout.jpg) no-repeat center center fixed;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)  ), url('../img/callout.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -212,6 +220,10 @@ hr.small {
 .portfolio {
     padding: 50px 0;
     background-color: #e4e2e7;
+}
+
+.portfolio h2 {
+  color: rgb(37,26,21)
 }
 
 .portfolio-item {
@@ -257,6 +269,15 @@ hr.small {
 
 footer {
     padding: 100px 0;
+}
+
+footer h4 {
+  color: rgb(37,26,21);
+  font-family: 'Monsieur La Doulaise', cursive;
+}
+
+footer i {
+    color: #86701a;
 }
 
 #to-top {
