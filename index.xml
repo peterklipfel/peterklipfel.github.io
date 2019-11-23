@@ -6,10 +6,19 @@
     <description>Recent content on Peter Klipfel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 22 Nov 2019 19:11:09 -0700</lastBuildDate>
+    <lastBuildDate>Fri, 22 Nov 2019 20:26:18 -0700</lastBuildDate>
     
 	<atom:link href="http://peterklipfel.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Why I&#39;m writing a biotech blog</title>
+      <link>http://peterklipfel.com/blog/why_a_biotech_blog/</link>
+      <pubDate>Fri, 22 Nov 2019 20:26:18 -0700</pubDate>
+      
+      <guid>http://peterklipfel.com/blog/why_a_biotech_blog/</guid>
+      <description>I found it difficult to learn programming, but never wrote down my progress. Now maybe my struggles with biology will be able to help someone else.</description>
+    </item>
     
     <item>
       <title>About</title>

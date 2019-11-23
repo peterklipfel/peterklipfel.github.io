@@ -3,12 +3,22 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://peterklipfel.com/about/</loc>
-    <lastmod>2019-11-22T19:11:09-07:00</lastmod>
+    <loc>http://peterklipfel.com/blog/</loc>
+    <lastmod>2019-11-22T20:26:18-07:00</lastmod>
   </url>
   
   <url>
     <loc>http://peterklipfel.com/</loc>
+    <lastmod>2019-11-22T20:26:18-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://peterklipfel.com/blog/why_a_biotech_blog/</loc>
+    <lastmod>2019-11-22T20:26:18-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://peterklipfel.com/about/</loc>
     <lastmod>2019-11-22T19:11:09-07:00</lastmod>
   </url>
   
