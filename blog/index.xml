@@ -6,10 +6,19 @@
     <description>Recent content in Blogs on Peter Klipfel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 22 Nov 2019 20:26:18 -0700</lastBuildDate>
+    <lastBuildDate>Wed, 27 Nov 2019 21:41:38 -0700</lastBuildDate>
     
 	<atom:link href="http://peterklipfel.com/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Polymerase Chain Reaction (PCR)</title>
+      <link>http://peterklipfel.com/blog/polymerase_chain_reaction_pcr/</link>
+      <pubDate>Wed, 27 Nov 2019 21:41:38 -0700</pubDate>
+      
+      <guid>http://peterklipfel.com/blog/polymerase_chain_reaction_pcr/</guid>
+      <description>Why do synthetic biologists use PCR? One of the foundations of synthetic biology is being able to put new genes into organisms that did not previously have them. Unfortunately, genes don&amp;rsquo;t naturally come in buckets of purified DNA segments; we have to make those ourselves. And this is where PCR comes in. If you happened to find a really cool jelly fish that glowed under UV light, you sequenced that jellyfish&amp;rsquo;s genome, and identified the gene that makes it glow, you might be able to take that gene from the jellyfish and add it to other organisms in order to make them glow as well.</description>
+    </item>
     
     <item>
       <title>Why I&#39;m writing a biotech blog</title>
