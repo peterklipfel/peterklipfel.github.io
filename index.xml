@@ -6,10 +6,20 @@
     <description>Recent content on Peter Klipfel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 27 Nov 2019 21:41:38 -0700</lastBuildDate>
+    <lastBuildDate>Sat, 30 Nov 2019 21:44:22 -0700</lastBuildDate>
     
 	<atom:link href="http://peterklipfel.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Plasmids</title>
+      <link>http://peterklipfel.com/blog/plasmids/</link>
+      <pubDate>Sat, 30 Nov 2019 21:44:22 -0700</pubDate>
+      
+      <guid>http://peterklipfel.com/blog/plasmids/</guid>
+      <description>What is a plasmid? Whenever I start looking into genes and genomes, I eventually end up at a circular diagram with highlighted sections with gene name labels. I understood that these represented genetic information, but I didn&amp;rsquo;t really understand why I should care about them.
+Being new at this whole biology thing forces me to remind myself of the fundamentals pretty often. In this case, I have to go back to the fundamentals of what DNA actually is.</description>
+    </item>
     
     <item>
       <title>Polymerase Chain Reaction (PCR)</title>
