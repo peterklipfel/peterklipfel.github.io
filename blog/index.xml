@@ -6,7 +6,7 @@
     <description>Recent content in Blogs on Peter Klipfel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 30 Nov 2019 21:44:22 -0700</lastBuildDate>
+    <lastBuildDate>Sat, 07 Dec 2019 21:44:22 -0700</lastBuildDate>
     
 	<atom:link href="http://peterklipfel.com/blog/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,11 +14,10 @@
     <item>
       <title>Plasmids</title>
       <link>http://peterklipfel.com/blog/plasmids/</link>
-      <pubDate>Sat, 30 Nov 2019 21:44:22 -0700</pubDate>
+      <pubDate>Sat, 07 Dec 2019 21:44:22 -0700</pubDate>
       
       <guid>http://peterklipfel.com/blog/plasmids/</guid>
-      <description>What is a plasmid? Whenever I start looking into genes and genomes, I eventually end up at a circular diagram with highlighted sections with gene name labels. I understood that these represented genetic information, but I didn&amp;rsquo;t really understand why I should care about them.
-Being new at this whole biology thing forces me to remind myself of the fundamentals pretty often. In this case, I have to go back to the fundamentals of what DNA actually is.</description>
+      <description>Plasmids show up everywhere, and are very useful to synthetic biologists. They are short, circular pieces of DNA that are separate from the chromosome of the cell that they inhabit.</description>
     </item>
     
     <item>
@@ -27,11 +26,11 @@ Being new at this whole biology thing forces me to remind myself of the fundamen
       <pubDate>Wed, 27 Nov 2019 21:41:38 -0700</pubDate>
       
       <guid>http://peterklipfel.com/blog/polymerase_chain_reaction_pcr/</guid>
-      <description>Why do synthetic biologists use PCR? One of the foundations of synthetic biology is being able to put new genes into organisms that did not previously have them. Unfortunately, genes don&amp;rsquo;t naturally come in buckets of purified DNA segments; we have to make those ourselves. And this is where PCR comes in. If you happened to find a really cool jelly fish that glowed under UV light, you sequenced that jellyfish&amp;rsquo;s genome, and identified the gene that makes it glow, you might be able to take that gene from the jellyfish and add it to other organisms in order to make them glow as well.</description>
+      <description>PCR is a common lab technique used to amplify a gene for use in further tests or steps.</description>
     </item>
     
     <item>
-      <title>Why I&#39;m writing a biotech blog</title>
+      <title>Why I&#39;m writing a synthetic biology blog</title>
       <link>http://peterklipfel.com/blog/why_a_biotech_blog/</link>
       <pubDate>Fri, 22 Nov 2019 20:26:18 -0700</pubDate>
       
