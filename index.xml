@@ -6,10 +6,19 @@
     <description>Recent content on Peter Klipfel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 07 Dec 2019 21:44:22 -0700</lastBuildDate>
+    <lastBuildDate>Sun, 08 Dec 2019 19:17:25 -0700</lastBuildDate>
     
 	<atom:link href="http://peterklipfel.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Useful resources</title>
+      <link>http://peterklipfel.com/blog/useful_resources/</link>
+      <pubDate>Sun, 08 Dec 2019 19:17:25 -0700</pubDate>
+      
+      <guid>http://peterklipfel.com/blog/useful_resources/</guid>
+      <description> protocols.io - lots of open protocols openwetware - open protocols Benchling - Bunches of useful tools for labs bitesizebio - Lots of useful articles  </description>
+    </item>
     
     <item>
       <title>Plasmids</title>
@@ -18,6 +27,15 @@
       
       <guid>http://peterklipfel.com/blog/plasmids/</guid>
       <description>Plasmids show up everywhere, and are very useful to synthetic biologists. They are short, circular pieces of DNA that are separate from the chromosome of the cell that they inhabit.</description>
+    </item>
+    
+    <item>
+      <title>Bacterial artificial chromosomes (BAC)</title>
+      <link>http://peterklipfel.com/blog/bacterial_artificial_chromosomes_bac/</link>
+      <pubDate>Thu, 05 Dec 2019 22:02:15 -0700</pubDate>
+      
+      <guid>http://peterklipfel.com/blog/bacterial_artificial_chromosomes_bac/</guid>
+      <description>What is a BAC? Previously, I wrote about plasmids as small, circular DNA sequences. The double edged sword of normal plasmids is that they are small. This can make them easier to reason about, but it can make them inconvenient for some uses. For example, if you wanted to study the herpes virus, it might be useful to have bacteria that carry the genome of the virus. BACs allow biologists to study organisms more holistically, but without having to actually raise the organism.</description>
     </item>
     
     <item>
