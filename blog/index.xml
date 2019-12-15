@@ -17,7 +17,7 @@
       <pubDate>Thu, 12 Dec 2019 22:02:15 -0700</pubDate>
       
       <guid>http://peterklipfel.com/blog/bacterial_artificial_chromosomes_bac/</guid>
-      <description>What is a BAC? Previously, I wrote about plasmids as small, circular DNA sequences. The double edged sword of normal plasmids is that they are small. This can make them easier to reason about, but it can make them inconvenient for some uses. For example, if you wanted to study the herpes virus, it might be useful to have bacteria that carry the genome of the virus. BACs allow biologists to study organisms more holistically, but without having to actually raise the organism.</description>
+      <description>BACs are useful for duplicating larger sections of DNA than can be duplicated with PCR or will fit on plasmids.</description>
     </item>
     
     <item>
