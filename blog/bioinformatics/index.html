@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<meta name="author" content="Peter Klipfel">
+		<meta name="description" content="My portal minimalistic portal to the world">
+		<meta name="generator" content="Hugo 0.59.1" />
+		<title>Bioinformatics &middot; Peter Klipfel</title>
+		<link rel="shortcut icon" href="http://peterklipfel.com/images/favicon.ico">
+		<link rel="stylesheet" href="http://peterklipfel.com/css/style.css">
+		<link rel="stylesheet" href="http://peterklipfel.com/css/highlight.css">
+
+		
+		<link rel="stylesheet" href="http://peterklipfel.com/css/font-awesome.min.css">
+		
+
+		
+		<link href="http://peterklipfel.com/index.xml" rel="alternate" type="application/rss+xml" title="Peter Klipfel" />
+		
+
+		
+	</head>
+
+    <body>
+       <nav class="main-nav">
+	
+	
+		<a href='http://peterklipfel.com/'> <span class="arrow">←</span>Home</a>
+	
+  
+	<a href='http://peterklipfel.com/tags'>Tags</a>
+	<a href='http://peterklipfel.com/about'>About</a>
+
+	
+
+	
+	<a class="cta" href="http://peterklipfel.com/index.xml">Subscribe</a>
+	
+</nav>
+
+
+        <section id="wrapper" class="post">
+            <article>
+                <header>
+                    <h1>
+                        Bioinformatics
+                    </h1>
+                    <h2 class="headline">
+                    Dec 14, 2019 21:58
+                    · 1370 words
+                    · 7 minute read
+                      <span class="tags">
+                      
+                      </span>
+                    </h2>
+                </header>
+                
+                  
+                    <div id="toc">
+                      <nav id="TableOfContents">
+<ul>
+<li><a href="#why-do-i-care-about-this">Why do I care about this?</a></li>
+<li><a href="#what-is-bioinformatics">What is bioinformatics?</a>
+<ul>
+<li><a href="#sequence-assembly">Sequence Assembly</a></li>
+<li><a href="#genome-annotation">Genome annotation</a></li>
+<li><a href="#dna-comparison">DNA comparison</a></li>
+<li><a href="#cancer-research">Cancer research</a></li>
+<li><a href="#protein-structure-analysis">Protein structure analysis</a></li>
+<li><a href="#protein-structure-interaction-analysis">Protein structure interaction analysis</a></li>
+<li><a href="#protein-regulation">Protein Regulation</a></li>
+</ul></li>
+<li><a href="#applying-ai-to-bioinformatics">Applying AI to BioInformatics</a></li>
+</ul>
+</nav>
+                    </div>
+                  
+                
+                <section id="post-body">
+                    
+
+<h1 id="why-do-i-care-about-this">Why do I care about this?</h1>
+
+<p>In this post, I wanted to go over what bioinformatics does for synthetic biologists. I&rsquo;m a software engineer by training, and I&rsquo;ve even taken some of a bioinformatics course. But I still didn&rsquo;t understand what the purpose of bioinformatics was. More importantly, I didn&rsquo;t understand how what I do for a living now - AI - could help with it.</p>
+
+<p>Bioinformatics is an entire field, so I&rsquo;m not going to be able to do it justice in a single blog post. The goal here is to do an overview of what bioinformatics is. There are books written about most of the subjects here, and I may go into many of them in future blog posts.</p>
+
+<h1 id="what-is-bioinformatics">What is bioinformatics?</h1>
+
+<p>At the time of this writing, wikipedia says the following about bioinformatics:</p>
+
+<blockquote>
+<p>Important sub-disciplines within bioinformatics and computational biology include:</p>
+
+<ul>
+<li>Development and implementation of computer programs that enable efficient access to, management and use of, various types of information</li>
+<li>Development of new algorithms (mathematical formulas) and statistical measures that assess relationships among members of large data sets. For example, there are methods to locate a gene within a sequence, to predict protein structure and/or function, and to cluster protein sequences into families of related sequences.</li>
+</ul>
+</blockquote>
+
+<p>If you&rsquo;re not a software engineer, the translation of the first bullet point to English is &ldquo;Any computer program&rdquo;. So, wikipedia has defined &ldquo;any computer program&rdquo; as a sub-field of bioinformatics; this seems ridiculously broad to me. I have found that definitions vary widely, so I&rsquo;ll be coming up with my own.</p>
+
+<p>The second bullet point is also far too broad, but the example it provides is pointing in the right direction.</p>
+
+<p>I&rsquo;m going to break down bioinformatics into 2 primary parts with additional sub-parts:</p>
+
+<ul>
+<li>DNA computation
+
+<ul>
+<li>DNA sequencing</li>
+<li>Sequence Assembly</li>
+<li>Genome annotation</li>
+<li>DNA comparison for reasoning about evolution</li>
+<li>Cancer research</li>
+</ul></li>
+<li>protein computation
+
+<ul>
+<li>Structure (how will proteins fold?)</li>
+<li>structural protein interactions</li>
+<li>regulation - how do complex protein interactions affect each other?</li>
+</ul></li>
+</ul>
+
+<h2 id="sequence-assembly">Sequence Assembly</h2>
+
+<p>There is an approach to genome sequencing called &ldquo;shotgun sequencing&rdquo; where biologists break up the DNA of the desired genome into lots of small bits, and then determine how the bits overlap. This can be very expensive computationally because the problem statement is: &ldquo;find a sequence of all the pieces which makes the shortest string&rdquo;. So the computer needs to go over every possible (maybe not every one, because there are optimizations that can be made) combination to determine which combination is the shortest.</p>
+
+<h2 id="genome-annotation">Genome annotation</h2>
+
+<p>The more I dive into bioinformatics, the more I start to realize the subtle complexity in all of it. In this case, we&rsquo;re more or less talking about a database lookup. Imagine you have a string of DNA, and you need to highlight sections of the string to represent different genomes. Simply put, this is just a fancy database lookup. The catch is, you don&rsquo;t know exactly what you&rsquo;re searching for beforehand. So you have to create a search algorithm that&rsquo;s able to match arbitrary substrings against a massive list of strings.</p>
+
+<h2 id="dna-comparison">DNA comparison</h2>
+
+<p>There are various reasons to compare DNA. For example, maybe you want to know how closely related two species are, so you compare their genomes to come up with a measurable estimate. Or, you might want to see if two strands of DNA actually produce the same protein despite being slightly different. Both of these involve taking long strings of DNA, and finding the &ldquo;best&rdquo; match in the comparison DNA. Doing this efficiently turns out to be tricky.</p>
+
+<h2 id="cancer-research">Cancer research</h2>
+
+<p>The number of possible mutations for any given protein is often enormous. There are 22^400 different proteins that could be coded for by any protein that requires 400 amino-acids. This means that modifications to DNA could create any of an outrageously large number of possible proteins. Cancer is characterized by the result of overexpression or underexpression of certain proteins, so studying it means churning through the 22^400 different possible proteins that can be caused by different mutations in genes. This problem is made more approachable by the fact that biologists are often looking for specific patterns, and there are often a large number of different amino-acid sequences which produce the same proteins. However, we&rsquo;ve been talking about proteins that are made from 400 amino acids, there are also proteins that might be made of 401, 402, 500, 1000 or any number of other amino-acid sequences.</p>
+
+<p>Additionally, there are often complex ways that proteins interact with each other, so cancer research may also use protein structure analysis, protein structure interaction analysis, and protein regulation analysis to identify what causes cells to misbehave.</p>
+
+<h2 id="protein-structure-analysis">Protein structure analysis</h2>
+
+<p>If simulated, protein structure analysis tries to predict how prteins will fold. Protein structures can be very complex, and understanding the shapes proteins fold into can help in understanding how to synthesize them and how they interact with other proteins (covered below). Simple organic compounds fold in known ways, but when these simple compounds are combined they can create tensions between them. Understanding how these tensions optimally resolve will inform the shape or the final protein.</p>
+
+<p>Lab techniques also produce large amounts of data which needs to be analyzed. For example, spectrometers can be used to verify whether the light that bounces off the protein matches what was predicted based on a simulation. This comparison can sometimes also be more difficult than it sounds if, for example, the measured light is not as specific as the hypothesis initially requires.</p>
+
+<h2 id="protein-structure-interaction-analysis">Protein structure interaction analysis</h2>
+
+<p>Based on the structures of proteins, they will interact in different ways. For example, if two proteins both have a mostly positive charge, they would tend to not interact well with each other. This is an overly-simplistic example, but the shapes or proteins and the affinity of parts of proteins with parts of other proteins dictate how they interact. But proteins do more than just lock together. When proteins interact, they can change. They exchange parts to produce new proteins, and this interaction can be modeled as well.</p>
+
+<p>Understanding the ways that proteins bind with each other and change together is important in designing new pathways in cells.</p>
+
+<h2 id="protein-regulation">Protein Regulation</h2>
+
+<p>Not only do proteins interact with other proteins, but they interact with all sorts of other things in a cell. Cells are chemical soups, and proteins can interact with lots of things in the cells. For example, proteins can interact with phosphate groups to activate them - this process is called phosphorylation. Proteins can also fall apart in cells as they run into organic compounds that destabilize them. This is called degredation, and can happen due to the instability of a protein, or it can be part of some pathway in the cell that marks certain kinds or proteins for recycling.</p>
+
+<h1 id="applying-ai-to-bioinformatics">Applying AI to BioInformatics</h1>
+
+<p>I will be using the terms &ldquo;AI&rdquo; and &ldquo;machine learning&rdquo; interchangeably.</p>
+
+<p>AI is really good at finding patterns in complex data. AI can explore massive, multidimensional spaces with limited data to find patterns that humans are not good at seeing. I like to think of AI in terms of heuristics. For example, if you wanted to predict whether a protein will have a certain shape, you might be able to say that 2% (I am making these numbers up as an example) of proteins that start with a certain amino acid have some shape, now you have a heuristic for guessing the general shape of a protein. Maybe this is useful, maybe not. But now, if you looked at both the first and the last protein and you could predict shape with greater accuracy, now you have a better heuristic. Machine learning is the process of optimizing computers to find better heuristics even faster. This is often better than starting from first principles when the number of possibilities is extremely large, as it is in biology.</p>
+
+<p>I could see AI being used to help find protein structure, protein structure interaction, and protein regulation because these problems are hugely complex with some variables being potentially continuous. I could also see AI being useful in DNA comparison because the similarities may not be straightforward, and deterimining what makes a useful comparison may be very difficult from first principles.</p>
+
+                </section>
+            </article>
+
+            
+
+            
+
+            
+
+            <footer id="footer">
+    
+        <div id="social">
+
+	
+	
+    <a class="symbol" href="https://www.github.com/peterklipfel">
+        <i class="fa fa-github-square"></i>
+    </a>
+    
+
+
+</div>
+
+    
+    <p class="small">
+    
+       © Copyright 2019
+       <br>
+       <i class="fa fa-flask" aria-hidden="true"></i> Peter Klipfel
+    
+    </p>
+</footer>
+
+        </section>
+
+        <script src="http://peterklipfel.com/js/jquery-3.3.1.min.js"></script>
+<script src="http://peterklipfel.com/js/main.js"></script>
+<script src="http://peterklipfel.com/js/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+
+
+    </body>
+</html>

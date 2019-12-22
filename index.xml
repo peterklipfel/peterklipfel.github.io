@@ -6,10 +6,19 @@
     <description>Recent content on Peter Klipfel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 12 Dec 2019 22:02:15 -0700</lastBuildDate>
+    <lastBuildDate>Sat, 14 Dec 2019 21:58:09 -0700</lastBuildDate>
     
 	<atom:link href="http://peterklipfel.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Bioinformatics</title>
+      <link>http://peterklipfel.com/blog/bioinformatics/</link>
+      <pubDate>Sat, 14 Dec 2019 21:58:09 -0700</pubDate>
+      
+      <guid>http://peterklipfel.com/blog/bioinformatics/</guid>
+      <description>How computers can be effectively applied to biology</description>
+    </item>
     
     <item>
       <title>Bacterial artificial chromosomes (BAC)</title>
