@@ -6,10 +6,19 @@
     <description>Recent content on Peter Klipfel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 27 Dec 2019 19:07:01 -0700</lastBuildDate>
+    <lastBuildDate>Fri, 03 Jan 2020 18:50:34 -0700</lastBuildDate>
     
 	<atom:link href="http://peterklipfel.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>DNA Extraction</title>
+      <link>http://peterklipfel.com/blog/dna_extraction/</link>
+      <pubDate>Fri, 03 Jan 2020 18:50:34 -0700</pubDate>
+      
+      <guid>http://peterklipfel.com/blog/dna_extraction/</guid>
+      <description>In order to learn about the genes of organisms, we must first get a purified DNA sample. This post goes over what that process looks like.</description>
+    </item>
     
     <item>
       <title>DNA sequencing methods</title>
