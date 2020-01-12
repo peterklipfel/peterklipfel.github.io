@@ -262,7 +262,14 @@ o.async=1; o.src=t; o.id='fathom-script';
 m.parentNode.insertBefore(o,m)
 })(document, window, 'https://cdn.usefathom.com/tracker.js', 'fathom');
 fathom('set', 'siteId', 'ASDYIXMC');
-fathom('trackPageview');
+var fathomExcludeHostnames = [
+  'localhost',
+  'web.archive.org'
+];
+if (fathomExcludeHostnames.indexOf(window.location.hostname) === -1) {
+    fathom('trackPageview');
+  }
+
 </script>
 
 

@@ -61,6 +61,13 @@
 			<ul>
 					
 					<div class="post-item">
+						<div class="post-time">Jan 10</div>
+						<a href="http://peterklipfel.com/blog/viral_transfection/" class="post-link">
+							Creating a virus
+						</a>
+					</div>
+					
+					<div class="post-item">
 						<div class="post-time">Jan 3</div>
 						<a href="http://peterklipfel.com/blog/dna_extraction/" class="post-link">
 							DNA Extraction
@@ -176,7 +183,14 @@ o.async=1; o.src=t; o.id='fathom-script';
 m.parentNode.insertBefore(o,m)
 })(document, window, 'https://cdn.usefathom.com/tracker.js', 'fathom');
 fathom('set', 'siteId', 'ASDYIXMC');
-fathom('trackPageview');
+var fathomExcludeHostnames = [
+  'localhost',
+  'web.archive.org'
+];
+if (fathomExcludeHostnames.indexOf(window.location.hostname) === -1) {
+    fathom('trackPageview');
+  }
+
 </script>
 
 

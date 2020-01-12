@@ -6,10 +6,19 @@
     <description>Recent content in Blogs on Peter Klipfel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 03 Jan 2020 18:50:34 -0700</lastBuildDate>
+    <lastBuildDate>Fri, 10 Jan 2020 15:59:55 -0700</lastBuildDate>
     
 	<atom:link href="http://peterklipfel.com/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Creating a virus</title>
+      <link>http://peterklipfel.com/blog/viral_transfection/</link>
+      <pubDate>Fri, 10 Jan 2020 15:59:55 -0700</pubDate>
+      
+      <guid>http://peterklipfel.com/blog/viral_transfection/</guid>
+      <description>Viruses can be very useful for synthetic biology. They allow us to add DNA to larger organisms with greater certainty. In this post, I want to add my own understanding to a procedure that I found on the internet.</description>
+    </item>
     
     <item>
       <title>DNA Extraction</title>

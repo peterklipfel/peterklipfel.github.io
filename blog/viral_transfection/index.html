@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<meta name="author" content="Peter Klipfel">
+		<meta name="description" content="My portal minimalistic portal to the world">
+		<meta name="generator" content="Hugo 0.59.1" />
+		<title>Creating a virus &middot; Peter Klipfel</title>
+		<link rel="shortcut icon" href="http://peterklipfel.com/images/favicon.ico">
+		<link rel="stylesheet" href="http://peterklipfel.com/css/style.css">
+		<link rel="stylesheet" href="http://peterklipfel.com/css/highlight.css">
+
+		
+		<link rel="stylesheet" href="http://peterklipfel.com/css/font-awesome.min.css">
+		
+
+		
+		<link href="http://peterklipfel.com/index.xml" rel="alternate" type="application/rss+xml" title="Peter Klipfel" />
+		
+
+		
+	</head>
+
+    <body>
+       <nav class="main-nav">
+	
+	
+		<a href='http://peterklipfel.com/'> <span class="arrow">←</span>Home</a>
+	
+  
+	<a href='http://peterklipfel.com/tags'>Tags</a>
+	<a href='http://peterklipfel.com/about'>About</a>
+
+	
+
+	
+	<a class="cta" href="http://peterklipfel.com/index.xml">Subscribe</a>
+	
+</nav>
+
+
+        <section id="wrapper" class="post">
+            <article>
+                <header>
+                    <h1>
+                        Creating a virus
+                    </h1>
+                    <h2 class="headline">
+                    Jan 10, 2020 15:59
+                    · 1492 words
+                    · 8 minute read
+                      <span class="tags">
+                      
+                      </span>
+                    </h2>
+                </header>
+                
+                  
+                    <div id="toc">
+                      <nav id="TableOfContents">
+<ul>
+<li><a href="#overview">Overview</a></li>
+<li><a href="#creating-a-virus">Creating a virus</a>
+<ul>
+<li><a href="#ingredients">Ingredients</a></li>
+<li><a href="#equipment">Equipment</a></li>
+<li><a href="#steps">Steps</a></li>
+<li><a href="#pitfalls">Pitfalls</a>
+<ul>
+<li><a href="#bad-media">Bad media</a></li>
+<li><a href="#ph-out-of-tolerance">pH out of tolerance</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#sources">Sources</a></li>
+</ul>
+</nav>
+                    </div>
+                  
+                
+                <section id="post-body">
+                    
+
+<h1 id="overview">Overview</h1>
+
+<p>Previously, I&rsquo;ve talked about transfection of e. coli using heat shock in my post on <a href="http://peterklipfel.com/blog/plasmids/">plasmids</a>. Transfection into  single celled organisms can be relatively simple. Using heat and electricity, we can take an artificial plasmid and add it to e. coli or yeast. This synthetic addition to the DNA in a cell codes for a protein that we want, and the cell will now produce that protein like a small factory.</p>
+
+<p>What if we want to add DNA to more complex organisms? I originally wanted to learn how to add new genes to a plant - it would be really cool to have fluorescent flowers. I found some evidence that it might be possible to soak a plant in a container full of plasmids in order to transfect it. After this process, in theory, some of the seeds will contain the plasmids, and if you grow a bunch of them, some of them will express that DNA.</p>
+
+<p>However, the better way to add DNA to a more complex organism is with a virus. Viruses are pockets of DNA (they don&rsquo;t even have cell walls) that inject their DNA into cells. The DNA they inject is coded to create more viruses, and then the new viruses inside the cell are released when the cell is lysed (it explodes). If you just want to create viruses, this is fine, because you&rsquo;ll end up with a ton of viruses, and some broken cells. So for creating a stock of some viral solution, it&rsquo;s fine for the virus to kill the cells, though, maybe not optimal since you only get a certain number amount of the virus from each cell, and then the cells can&rsquo;t be used again. However, not all viruses work just like this. If they did, then all of the cells that were infected with the synthetic DNA would explode and die. Some viruses are &ldquo;replication-defective&rdquo; which means that they do not have the right DNA to continue the pathway that would cause the cell to die.</p>
+
+<p>Today I want to focus on creating a virus.</p>
+
+<h1 id="creating-a-virus">Creating a virus</h1>
+
+<p>The first thing I want to go through is how to actually create a virus. I will be copying someone else&rsquo;s procedure because the internet tends to rot, and because it&rsquo;s easier to translate with the original content. I&rsquo;m using the <a href="https://www.addgene.org/protocols/lentivirus-production/">Addgene&rsquo;s lentivirus production protocol</a>. My goal is to go through the procedure and attempt to translate the acronyms and bio-words into english.</p>
+
+<h2 id="ingredients">Ingredients</h2>
+
+<ul>
+<li>DMEM high glucose
+
+<ul>
+<li>Dulbecco&rsquo;s Modified Eagle Medium is a growth medium for supporting the growth of many different mammalian cells. It helps cells stay alive and grow</li>
+</ul></li>
+<li>L-alanyl-L-glutamine (or alternative stable glutamine)
+
+<ul>
+<li>alanylglutamine</li>
+</ul></li>
+<li>Heat-inactivated FBS
+
+<ul>
+<li>Heat-Inactivated Fetal Bovine Serum helps cells grow. It is nutrient rich, and contains few antibodies (which might negatively interact with the cells)</li>
+</ul></li>
+<li>Low serum medium such as Opti-MEM or Opti-Pro SFM
+
+<ul>
+<li>This is also a growth medium for cells</li>
+</ul></li>
+<li>Chloroquine diphosphate, 25 µM</li>
+<li>PEI, 1 mg/mL
+
+<ul>
+<li>Polyethylenimine is used to help with transient transfection. Transient transfection means that the transfection is not passed to daughter cells.</li>
+</ul></li>
+<li>10 cm tissue culture dishes
+
+<ul>
+<li>a dish that the tissue can be grown in</li>
+</ul></li>
+<li>Hydrochloric acid</li>
+<li>Sodium hydroxide</li>
+<li>0.22 μm polyethersulfone (PES) filter</li>
+<li>0.45 μm PES filter</li>
+</ul>
+
+<h2 id="equipment">Equipment</h2>
+
+<ul>
+<li>Biosafety cabinet
+
+<ul>
+<li>We&rsquo;re dealing with viruses, so it&rsquo;s better to have a special place for doing potentially dangerous things</li>
+</ul></li>
+<li>Pipettes
+
+<ul>
+<li>A thing that can measure amounts of liquids</li>
+</ul></li>
+<li>Pipette tips</li>
+<li>Incubator
+
+<ul>
+<li>Where the cells will be grown. These are temperature controlled boxes, and some of them shake.</li>
+</ul></li>
+<li>pH meter</li>
+<li>Stir plate
+
+<ul>
+<li>Stir plates use magnets to spin a magentic stir bar in a container which sits on top of it</li>
+</ul></li>
+<li>Magenetic Stir Bar
+
+<ul>
+<li>This goes in the container that you need to stir. The stir plate spins it in order to mix the contents of the container</li>
+</ul></li>
+<li>Microcentrifuge tubes
+
+<ul>
+<li>Used in a centrifuge to separate the contents of the tube</li>
+</ul></li>
+<li>Syringes for filtering
+
+<ul>
+<li>Syringes can be outfitted with a filter inside which helps to move liquids around, and filter out components of the liquid as they&rsquo;re being moved</li>
+</ul></li>
+</ul>
+
+<h2 id="steps">Steps</h2>
+
+<ol>
+<li>Create final DMEM mixture (10% v/v FBS and 4 mM L-alanyl-L-glutamine)
+
+<ol>
+<li>Create a 500 mL bottle of DMEM high glucose</li>
+<li>Add 55 mL of heat inactivated FBS</li>
+<li>Add 11 mL of 200 mM L-alanyl-L-glutamine</li>
+<li>Store at 4 ℃.</li>
+</ol></li>
+<li>Create final 25 mM chloroquine diphosphate mixture
+
+<ol>
+<li>Dissolve 0.129 g of chloroquine diphosphate salt in 10 mL of sterile water.</li>
+<li>Filter sterilize through a 0.22 μm filter.</li>
+<li>Aliquot 50-100 μL and store at -20 ℃.</li>
+<li>Aliquots can be thawed and stored at 4 ℃ prior to use. Thawed aliquots should be discarded after 1-2 months.</li>
+</ol></li>
+<li>Create final 1 mg/mL PEI, linear MW 25,000 Da mixture
+
+<ol>
+<li>Dissolve 100 mg of PEI powder in 100 mL of deionized water.</li>
+<li>While stirring, slowly add hydrochloric acid until the solution clears.</li>
+<li>Check the pH of the solution.</li>
+<li>Use hydrochloric acid or sodium hydroxide to adjust the pH to 7.0. Typically the solution will be basic and will need adjustment with hydrochloric acid first.</li>
+<li>Allow the solution to mix for 10 min and then recheck the pH to ensure that it has not drifted.</li>
+<li>Filter the solution through a 0.22 μm membrane.</li>
+<li>Aliquot 500-1000 μL into sterile tubes.</li>
+<li>Store the tubes at -80 ℃.</li>
+<li>After thawing, the solution can be stored at 4 ℃ for up to 2 months. After 2 months, discard the tube and thaw a new working stock.</li>
+<li>The optimal mass DNA:mass PEI ratio will need to be empirically determined for each new batch of 1 mg/mL PEI and for each cell line.</li>
+</ol></li>
+<li>Seed 293T packaging cells at 3.8×106 cells per plate in DMEM complete in 10 cm tissue culture plates.</li>
+<li>Incubate the cells at 37 ℃, 5% CO2 for ~20 hours.
+
+<ul>
+<li>mammalian cells do not live in the atmosphere (~0.04%). They live inside bodies. The amount of CO2 in bodies is greater than the amount of CO2 in the atmosphere. There is some more subtlety in the chemstry of the CO2 in mammals, but that&rsquo;s beyond the scope of this post.</li>
+</ul></li>
+<li>Gently aspirate media, add 10 mL fresh DMEM complete containing 25 μM cloroquine diphosphate and incubate ~5 hours
+
+<ul>
+<li>For 10 mL of DMEM complete, add 10 μL of 25 mM chloroquine diphosphate.</li>
+<li>&ldquo;Aspirate&rdquo; is a fancy way of saying &ldquo;suck up&rdquo;. This step removes the old cell media and replaces it with fresh media</li>
+</ul></li>
+<li>Prepare a mixture of the 3 transfection plasmids:
+
+<ul>
+<li>psPAX2 - 1.3 pmol</li>
+<li>This is an empty plasmid backbone. It is used to add new DNA to plasmids. This could be changed to introduce new DNA to the viral vector</li>
+<li>pMD2.G - 0.72 pmol</li>
+<li>This is a DNA sequence that codes for the creation of a virus</li>
+<li>Transfer Plasmid - 1.64 pmol</li>
+<li>This is a separate plasmid that will help the virus to proliferate. This often happens via a mechanism called Long terminal repeat (LTR)</li>
+<li>AddGene of course, recommends its own <a href="https://www.addgene.org/50917/">pHAGE TRE dCas9-KRAB</a></li>
+<li>OptiPro SFM to total volume - 500 μL</li>
+</ul></li>
+<li>Dilute the above 500 μL mixture into 500 μL PEI-OptiPro SFM with enough PEI such that the ratio of μg DNA:μg PEI is 1:3 (1000 μL total per 10 cm dish).</li>
+<li>Gently add the diluted PEI to the diluted DNA. Add the diluted PEI dropwise while gently flicking the diluted DNA tube. Incubate the mixture 15-20 min at room temperature.</li>
+<li>Carefully transfer the transfection mix to the Lenti-X 293T packaging cells. Add the transfection mix dropwise being careful not to dislodge the cells</li>
+<li>Incubate the cells for 18 hours, or until the following morning.
+
+<ul>
+<li>Again at 5% CO2 and 37 ℃</li>
+</ul></li>
+<li>The following morning, carefully aspirate the media. Replace the media with 15 mL of DMEM complete.</li>
+<li>Incubate the cells again at 5% CO2 37 ℃</li>
+<li>Virus can be harvested at 48, 72, and 96 hours post transfection in individual harvests or a combined harvest where all the individual harvests are pooled. If pooling harvests, transfer the harvested media to a polypropylene storage tube and store at 4 ℃ between harvest.</li>
+<li>Centrifuge the viral supernatant at ~500 g for 5 minutes to pellet any packaging cells that were collected during harvesting.
+
+<ul>
+<li>Basically, the stuff left at the top is concentrated virus.</li>
+</ul></li>
+<li>Filter supernatant through a 0.45 μm PES filter.</li>
+<li>The viral supernatant can be stored at 4 ℃ for several hours but should be aliquotted and snap frozen in liquid nitrogen and stored at -80 ℃ as soon as possible to avoid loss of titer.
+
+<ul>
+<li>Freeze it fast so that the virus stays intact for long periods of time</li>
+</ul></li>
+</ol>
+
+<h2 id="pitfalls">Pitfalls</h2>
+
+<h3 id="bad-media">Bad media</h3>
+
+<p>Different kinds of cell media will affect the outcome of the experiment. Often, they can limit transfection effectiveness, thus reducing the total amount of virus obtained.</p>
+
+<h3 id="ph-out-of-tolerance">pH out of tolerance</h3>
+
+<p>pH can cause all kinds or problems in biological systems. In this case, when creating the final PEI mixture, it is important to make sure that the pH stays at the right levels.</p>
+
+<h1 id="sources">Sources</h1>
+
+<ul>
+<li><a href="https://www.thermofisher.com/us/en/home/references/gibco-cell-culture-basics/transfection-basics/transfection-methods/transient-transfection.html">https://www.thermofisher.com/us/en/home/references/gibco-cell-culture-basics/transfection-basics/transfection-methods/transient-transfection.html</a></li>
+<li><a href="https://blog.addgene.org/your-lentiviral-plasmid-faqs-answered">https://blog.addgene.org/your-lentiviral-plasmid-faqs-answered</a></li>
+</ul>
+
+                </section>
+            </article>
+
+            
+
+            
+
+            
+
+            <footer id="footer">
+    
+        <div id="social">
+
+	
+	
+    <a class="symbol" href="https://www.github.com/peterklipfel">
+        <i class="fa fa-github-square"></i>
+    </a>
+    
+
+
+</div>
+
+    
+    <p class="small">
+    
+       © Copyright 2020
+       <br>
+       <i class="fa fa-flask" aria-hidden="true"></i> Peter Klipfel
+    
+    </p>
+</footer>
+
+        </section>
+
+        <script src="http://peterklipfel.com/js/jquery-3.3.1.min.js"></script>
+<script src="http://peterklipfel.com/js/main.js"></script>
+<script src="http://peterklipfel.com/js/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+
+<script>
+(function(f, a, t, h, o, m){
+a[h]=a[h]||function(){
+(a[h].q=a[h].q||[]).push(arguments)
+};
+o=f.createElement('script'),
+m=f.getElementsByTagName('script')[0];
+o.async=1; o.src=t; o.id='fathom-script';
+m.parentNode.insertBefore(o,m)
+})(document, window, 'https://cdn.usefathom.com/tracker.js', 'fathom');
+fathom('set', 'siteId', 'ASDYIXMC');
+var fathomExcludeHostnames = [
+  'localhost',
+  'web.archive.org'
+];
+if (fathomExcludeHostnames.indexOf(window.location.hostname) === -1) {
+    fathom('trackPageview');
+  }
+
+</script>
+
+
+    </body>
+</html>
