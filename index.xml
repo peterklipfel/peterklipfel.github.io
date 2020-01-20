@@ -6,10 +6,19 @@
     <description>Recent content on Peter Klipfel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 10 Jan 2020 15:59:55 -0700</lastBuildDate>
+    <lastBuildDate>Fri, 17 Jan 2020 22:24:10 -0700</lastBuildDate>
     
 	<atom:link href="http://peterklipfel.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Gene transfer in plants</title>
+      <link>http://peterklipfel.com/blog/gene_transfer_in_plants/</link>
+      <pubDate>Fri, 17 Jan 2020 22:24:10 -0700</pubDate>
+      
+      <guid>http://peterklipfel.com/blog/gene_transfer_in_plants/</guid>
+      <description>Inserting genes into plants is how we get GMOs and other cool plants</description>
+    </item>
     
     <item>
       <title>Creating a virus</title>
