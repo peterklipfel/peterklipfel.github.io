@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<meta name="author" content="Peter Klipfel">
+		<meta name="description" content="My portal minimalistic portal to the world">
+		<meta name="generator" content="Hugo 0.59.1" />
+		<title>DNA methylation in prokaryotes &middot; Peter Klipfel</title>
+		<link rel="shortcut icon" href="http://peterklipfel.com/images/favicon.ico">
+		<link rel="stylesheet" href="http://peterklipfel.com/css/style.css">
+		<link rel="stylesheet" href="http://peterklipfel.com/css/highlight.css">
+
+		
+		<link rel="stylesheet" href="http://peterklipfel.com/css/font-awesome.min.css">
+		
+
+		
+		<link href="http://peterklipfel.com/index.xml" rel="alternate" type="application/rss+xml" title="Peter Klipfel" />
+		
+
+		
+	</head>
+
+    <body>
+       <nav class="main-nav">
+	
+	
+		<a href='http://peterklipfel.com/'> <span class="arrow">←</span>Home</a>
+	
+  
+	<a href='http://peterklipfel.com/tags'>Tags</a>
+	<a href='http://peterklipfel.com/about'>About</a>
+
+	
+
+	
+	<a class="cta" href="http://peterklipfel.com/index.xml">Subscribe</a>
+	
+</nav>
+
+
+        <section id="wrapper" class="post">
+            <article>
+                <header>
+                    <h1>
+                        DNA methylation in prokaryotes
+                    </h1>
+                    <h2 class="headline">
+                    Jan 31, 2020 21:42
+                    · 1003 words
+                    · 5 minute read
+                      <span class="tags">
+                      
+                      </span>
+                    </h2>
+                </header>
+                
+                  
+                    <div id="toc">
+                      <nav id="TableOfContents">
+<ul>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#basics-of-dna-methylation">Basics of DNA Methylation</a></li>
+<li><a href="#effects-of-methylation">Effects of Methylation</a>
+<ul>
+<li><a href="#introducing-mutations">Introducing mutations</a></li>
+<li><a href="#protecting-dna">Protecting DNA</a></li>
+</ul></li>
+<li><a href="#resources">Resources</a></li>
+</ul>
+</nav>
+                    </div>
+                  
+                
+                <section id="post-body">
+                    
+
+<h1 id="introduction">Introduction</h1>
+
+<p>I was researching possible failure modes of plasmid transfection in e. coli, and I came across a post that mentioned DNA methylation as a possible problem. I had not dug into this before, and discovered that it is an entire field of study within biology. Before I realized how broad the topic was, I anticipated writing this blog post on DNA methylation; I then reduced its scope to only prokaryotes, though I will talk a little bit about how DNA methylation affects eukaryotic organisms as well in order to provide more context for what it does and how it works.</p>
+
+<h1 id="basics-of-dna-methylation">Basics of DNA Methylation</h1>
+
+<p>To understand what&rsquo;s going on, I needed to draw from some of my organic chemistry knowledge. A &ldquo;methyl&rdquo; group is just a single carbon attached to the side of a chain of carbons. So when we say that something is &ldquo;methylated&rdquo;, we just mean that it had a CH3 molecule attached to it. Carbon likes to have 4 bonds, so the single carbon atom attaches itself to a larger thing, and brings its 3 Hydrogen friends along for the ride because that way the Carbon has 4 bonds.</p>
+
+<p>In general, DNA methylation occurs on cytosine (the C part of DNA - remember G, T, C, A), so I&rsquo;m going to focus on that. Methylation can also happen on Adenine (the A part of DNA - remember G, T, C, A), but it is not as well studied.</p>
+
+<p>Each base in DNA is a relatively simple molecule, they all look similar to Cytosine:</p>
+
+<figure>
+    <img src="/cytosine.png"
+         alt="cytosine diagram" width="30%"/> <figcaption>
+            <h4>Cytosine</h4>
+        </figcaption>
+</figure>
+
+
+<p>Each C represented in a genome has the molecular structure described in that image. When the cytosine is methylated, it turns into the following structure:</p>
+
+<figure>
+    <img src="/methylcytosine.png"
+         alt="methylated cytosine diagram" width="40%"/> <figcaption>
+            <h4>Methylated Cytosine (5-Methylcytosine)</h4>
+        </figcaption>
+</figure>
+
+
+<p>If you&rsquo;re not familiar with organic chemistry, the only difference is the extra line in the upper left of the molecule. That&rsquo;s it!</p>
+
+<h1 id="effects-of-methylation">Effects of Methylation</h1>
+
+<p>The effects of methylation are still being studied, and there is a substantial amount of research on epigenetics that is derived from the effects of methylation.</p>
+
+<p>There are two primary effects of methylation
+* Introducing mutations
+* Protecting DNA</p>
+
+<h2 id="introducing-mutations">Introducing mutations</h2>
+
+<p>The process that I will be talking about here is called &ldquo;deamination&rdquo;. Though scientists often name things with lots of syllables, they are logical. Deamination is the process of a molecule losing an &ldquo;amine&rdquo;. &ldquo;Amine&rdquo; is a shorthand for &ldquo;a nitrogen with 2 electrons on it which is bonded to 3 other &lsquo;groups&rsquo;&rdquo;. A &ldquo;group&rdquo;, just means &ldquo;some other stuff&rdquo;; usually it&rsquo;s a bunch of carbons bonded to each other.</p>
+
+<p>Normally, when cytosine deaminates in DNA, it becomes uracil. This reaction is shown below:</p>
+
+<figure>
+    <img src="/cytosine_deamination.png"
+         alt="Cytosine deaminates to uracil" width="100%"/> <figcaption>
+            <h4>Cytosine deaminates to uracil</h4>
+        </figcaption>
+</figure>
+
+
+<p>When this happens in cells, uracil is not a valid base for DNA, and other enzymes repair this mistake. Note that uracil is used in RNA as a substitute for thymine.</p>
+
+<p>However, if the cytosine is first methylated (it has that extra carbon with the 3 hydrogen friends), then the reaction is different. Instead of becoming uracil, the cytosine becomes thymine. This reaction is shown below:</p>
+
+<figure>
+    <img src="/methylcytosine_deamination.png"
+         alt="5-methylcytosine deaminates to thymine" width="100%"/> <figcaption>
+            <h4>5-methylcytosine deaminates to thymine</h4>
+        </figcaption>
+</figure>
+
+
+<p>Ok, this was a bit detailed, but it&rsquo;s been useful for me to understand how little it takes to throw things out of balance in the biological world. In this case, you can see that the difference between these two reactions is pretty subtle.</p>
+
+<p>However, the effect is profound. In the second case, the DNA now has an error in it. Rather than having a C that is paired with a G, there is now a T paired with a G. This is wrong (read: unstable), and there are now two possible outcomes for reparation. Either the T is &ldquo;fixed&rdquo; to match the G, and now we&rsquo;re back to the original configuration, or the G is &ldquo;fixed&rdquo; to match the T. In the second case, a mutation has been introduced into the genome of the organism.</p>
+
+<p>If the error correction produces a mutation several times, then genes can be turned on and off by this process. In an even more interesting case, if the genes that are being modified are passed to offspring, then now we have a mechanism for epigenetics. Genomes can be modified in living organisms, these mutations can be passed on to offspring. This is an area of research that has received a great amount of attention in the last 10 years.</p>
+
+<p>Why would we care about these mutations in bacteria? Because we want the bacteria to do what we tell them to with the plasmids we transfer into them, and mutations thwart those efforts.</p>
+
+<h2 id="protecting-dna">Protecting DNA</h2>
+
+<p>In prokaryotic cells, there is a system called the &ldquo;restriction modification system&rdquo;. The job of this system is to digest DNA. The difficulty is that the cell has a bunch of DNA in it called a genome that, you know, keeps it alive. A cell that digests its own genome does not produce offspring. So, somehow, there needs to be a difference between the genome of the prokaryote, and any foreign DNA. Interestingly, this operates as a kind of simplified immune system for the prokaryote. That differentiating factor is methylation.</p>
+
+<p>There are actually 4 different kinds of systems that are used to differentiate host DNA from foreign DNA, and they range in complexity. I may write more about this in the future, but for now I will wave my hands and say that these systems are complicated, and they all require methylation.</p>
+
+<p>Synthetic biologists need to care about DNA protection through methylation because plasmids are foreign DNA, and by default, e. coli will reject them by digesting them. There are two ways to overcome this, the first is to choose an e. coli strain that is deficient in the restriction enzymes that would digest your plasmids, and the second is to add a methylation enzyme into the plasmid so that it looks like native DNA to the e. coli.</p>
+
+<h1 id="resources">Resources</h1>
+
+<p>As usual, this required a lot of wikipedia diving. The images here were obtained from wikimedia.</p>
+
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/DNA_methylation">https://en.wikipedia.org/wiki/DNA_methylation</a></li>
+<li><a href="https://en.wikipedia.org/wiki/5-Methylcytosine">https://en.wikipedia.org/wiki/5-Methylcytosine</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Restriction_enzyme">https://en.wikipedia.org/wiki/Restriction_enzyme</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Restriction_modification_system">https://en.wikipedia.org/wiki/Restriction_modification_system</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Deamination">https://en.wikipedia.org/wiki/Deamination</a></li>
+<li><a href="https://bitesizebio.com/30630/choosing-right-e-coli-strain/">https://bitesizebio.com/30630/choosing-right-e-coli-strain/</a></li>
+</ul>
+
+                </section>
+            </article>
+
+            
+
+            
+
+            
+
+            <footer id="footer">
+    
+        <div id="social">
+
+	
+	
+    <a class="symbol" href="https://www.github.com/peterklipfel">
+        <i class="fa fa-github-square"></i>
+    </a>
+    
+
+
+</div>
+
+    
+    <p class="small">
+    
+       © Copyright 2020
+       <br>
+       <i class="fa fa-flask" aria-hidden="true"></i> Peter Klipfel
+    
+    </p>
+</footer>
+
+        </section>
+
+        <script src="http://peterklipfel.com/js/jquery-3.3.1.min.js"></script>
+<script src="http://peterklipfel.com/js/main.js"></script>
+<script src="http://peterklipfel.com/js/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+
+<script>
+(function(f, a, t, h, o, m){
+a[h]=a[h]||function(){
+(a[h].q=a[h].q||[]).push(arguments)
+};
+o=f.createElement('script'),
+m=f.getElementsByTagName('script')[0];
+o.async=1; o.src=t; o.id='fathom-script';
+m.parentNode.insertBefore(o,m)
+})(document, window, 'https://cdn.usefathom.com/tracker.js', 'fathom');
+fathom('set', 'siteId', 'ASDYIXMC');
+var fathomExcludeHostnames = [
+  'localhost',
+  'web.archive.org'
+];
+if (fathomExcludeHostnames.indexOf(window.location.hostname) === -1) {
+    fathom('trackPageview');
+  }
+
+</script>
+
+
+    </body>
+</html>
