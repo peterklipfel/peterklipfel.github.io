@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<meta name="author" content="Peter Klipfel">
+		<meta name="description" content="My portal minimalistic portal to the world">
+		<meta name="generator" content="Hugo 0.59.1" />
+		<title>Lac operon &middot; Peter Klipfel</title>
+		<link rel="shortcut icon" href="http://peterklipfel.com/images/favicon.ico">
+		<link rel="stylesheet" href="http://peterklipfel.com/css/style.css">
+		<link rel="stylesheet" href="http://peterklipfel.com/css/highlight.css">
+
+		
+		<link rel="stylesheet" href="http://peterklipfel.com/css/font-awesome.min.css">
+		
+
+		
+		<link href="http://peterklipfel.com/index.xml" rel="alternate" type="application/rss+xml" title="Peter Klipfel" />
+		
+
+		
+	</head>
+
+    <body>
+       <nav class="main-nav">
+	
+	
+		<a href='http://peterklipfel.com/'> <span class="arrow">←</span>Home</a>
+	
+  
+	<a href='http://peterklipfel.com/tags'>Tags</a>
+	<a href='http://peterklipfel.com/about'>About</a>
+
+	
+
+	
+	<a class="cta" href="http://peterklipfel.com/index.xml">Subscribe</a>
+	
+</nav>
+
+
+        <section id="wrapper" class="post">
+            <article>
+                <header>
+                    <h1>
+                        Lac operon
+                    </h1>
+                    <h2 class="headline">
+                    Feb 7, 2020 16:47
+                    · 880 words
+                    · 5 minute read
+                      <span class="tags">
+                      
+                      </span>
+                    </h2>
+                </header>
+                
+                  
+                    <div id="toc">
+                      <nav id="TableOfContents">
+<ul>
+<li><a href="#overview">Overview</a></li>
+<li><a href="#function-of-the-operon">Function of the operon</a></li>
+<li><a href="#how-it-can-be-used">How it can be used</a></li>
+</ul>
+</nav>
+                    </div>
+                  
+                
+                <section id="post-body">
+                    
+
+<h1 id="overview">Overview</h1>
+
+<p>The first word in &ldquo;lac operon&rdquo; refers to lactose, and the second word refers to the structure of the genes. Usually, when people discuss the lac operon, they do so in the context of e. coli. Though e. coli is not the only bacteria that can have the lac operon, it&rsquo;s usually what people are referring to. I will continue that tradition.</p>
+
+<p>Lactose is a type of sugar often found in milk. You may have heard of people being &ldquo;lactose&rdquo; intolerant. Well, the stuff that they are intolerant to is a type of sugar that can be broken down for energy by e. coli. However, e. coli doesn&rsquo;t particularly like it either. It takes less energy for e. coli to break down glucose - a different type of sugar. Lactose is the sub-optimal choice for food for e. coli, and the e. coli happens to have a useful mechanism for determining when to digest it.</p>
+
+<p>An &ldquo;operon&rdquo; is a sequence of genes that all interact with each other, are all next to each other, and are all transcribed together. In the case of the lac operon, the components of the operon are:</p>
+
+<ul>
+<li>CAP site</li>
+<li>promoter</li>
+<li>Operator</li>
+<li>Digestion genes
+
+<ul>
+<li><em>lacZ</em></li>
+<li><em>lacY</em></li>
+<li><em>lacA</em></li>
+</ul></li>
+</ul>
+
+<h1 id="function-of-the-operon">Function of the operon</h1>
+
+<p>The operon&rsquo;s works on the following rules:</p>
+
+<ol>
+<li>Do not digest lactose - even if it&rsquo;s available - if glucose is available</li>
+<li>Digest lactose when it is available if glucose is not available</li>
+</ol>
+
+<p>Normally, when DNA is read, DNA polymerase starts reading at a sequence that it binds well to; a promoter. Then it continues reading the DNA until it hits another sequence that it does not bind well to, and it stops; the terminator sequence. In the case of the lac operon, there is a sequence of DNA which directly follows the promoter which normally has a repressor protein bound to it. The sequence that the repressor is bound to is called the &ldquo;operator&rdquo;. This repressor has the special property that it binds well to lactose (actually, it binds to a rearranged version of lactose, but that&rsquo;s not super important for this discussion), and when it binds to lactose it ceases to bind well to the DNA. This allows the polymerase to do its job and continue reading the DNA.</p>
+
+<p>This explains the promoter and operator genes. The promoter helps DNA polymerase bind to the DNA, and the operator &ldquo;turns on&rdquo; in the presence of lactose. The last genes are the digestion genes, and their job is to actually cut up the lactose molecule into usable food for the bacteria.</p>
+
+<p>Now we have a gene sequence composed of the promoter, operator, and digestion genes. This sequence allows the bacteria to process lactose for food. But it only does so in the presence of lactose. However, this breaks the first rule. It will turn on <em>even if glucose is available</em>, which is not what we want (or what has been measured experimentally).</p>
+
+<p>In order to get this gene sequence to follow rule one as outlined above, we need to consider the CAP site. It didn&rsquo;t help me understand things, but in case you&rsquo;re wondering, CAP stands for catabolite activator protein. The idea of the CAP site is pretty simple. When glucose is missing, it is &ldquo;turned on&rdquo;, and the promoter sequence can be bound to. It turns out that polymerase needs the CAP site to be &ldquo;turned on&rdquo; in order to bind to the promoter sequence. It helps me to think of the CAP site as an extension of the promoter sequence, and without it, the promoter sequence doesn&rsquo;t work.</p>
+
+<p>There&rsquo;s a slight complication here, though. It&rsquo;s easy to understand how the operator works, because it responds to being bumped by lactose. How does the CAP site recognize the absence of something? Well, it turns out that there is a different mechanism in the cell that releases a molecule called cyclic AMP. In the presence of this, the CAP site activates. In order to keep things simple, I&rsquo;m going to avoid going into the details of this mechanism.</p>
+
+<h1 id="how-it-can-be-used">How it can be used</h1>
+
+<p>The coolest thing about genetic engineering is that we get to add and remove genes from organisms at will. So, let&rsquo;s assume that all e. coli in the world contains the lac operon. If they didn&rsquo;t all have it, then we could just find a strain that didn&rsquo;t have the gene, and we wouldn&rsquo;t have to go through this step. We could take the e. coli that had a lac operon, and use some gene cutting proteins to remove the lac operon from it, and build new e. coli without the gene.</p>
+
+<p>Then we could create a plasmid that had the lac operon in it, and reinject it into the e. coli. If we grew the e. coli in lactose (and no glucose), we would know which bacteria did and did not have the lac operon in it. Now for the fun part. If we added another gene in the lac operon (say, a gene that made insulin), we would be able to select for the bacteria which had our modified lac operon in it. This allows us to direct the growth of e. coli towards the novel strains that we have just created. This is a fundamental part of genetic enginering.</p>
+
+                </section>
+            </article>
+
+            
+
+            
+
+            
+
+            <footer id="footer">
+    
+        <div id="social">
+
+	
+	
+    <a class="symbol" href="https://www.github.com/peterklipfel">
+        <i class="fa fa-github-square"></i>
+    </a>
+    
+
+
+</div>
+
+    
+    <p class="small">
+    
+       © Copyright 2020
+       <br>
+       <i class="fa fa-flask" aria-hidden="true"></i> Peter Klipfel
+    
+    </p>
+</footer>
+
+        </section>
+
+        <script src="http://peterklipfel.com/js/jquery-3.3.1.min.js"></script>
+<script src="http://peterklipfel.com/js/main.js"></script>
+<script src="http://peterklipfel.com/js/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+
+<script>
+(function(f, a, t, h, o, m){
+a[h]=a[h]||function(){
+(a[h].q=a[h].q||[]).push(arguments)
+};
+o=f.createElement('script'),
+m=f.getElementsByTagName('script')[0];
+o.async=1; o.src=t; o.id='fathom-script';
+m.parentNode.insertBefore(o,m)
+})(document, window, 'https://cdn.usefathom.com/tracker.js', 'fathom');
+fathom('set', 'siteId', 'ASDYIXMC');
+var fathomExcludeHostnames = [
+  'localhost',
+  'web.archive.org'
+];
+if (fathomExcludeHostnames.indexOf(window.location.hostname) === -1) {
+    fathom('trackPageview');
+  }
+
+</script>
+
+
+    </body>
+</html>
