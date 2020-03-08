@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<meta name="author" content="Peter Klipfel">
+		<meta name="description" content="My portal minimalistic portal to the world">
+		<meta name="generator" content="Hugo 0.59.1" />
+		<title>Building proteins &middot; Peter Klipfel</title>
+		<link rel="shortcut icon" href="http://peterklipfel.com/images/favicon.ico">
+		<link rel="stylesheet" href="http://peterklipfel.com/css/style.css">
+		<link rel="stylesheet" href="http://peterklipfel.com/css/highlight.css">
+
+		
+		<link rel="stylesheet" href="http://peterklipfel.com/css/font-awesome.min.css">
+		
+
+		
+		<link href="http://peterklipfel.com/index.xml" rel="alternate" type="application/rss+xml" title="Peter Klipfel" />
+		
+
+		
+	</head>
+
+    <body>
+       <nav class="main-nav">
+	
+	
+		<a href='http://peterklipfel.com/'> <span class="arrow">←</span>Home</a>
+	
+  
+	<a href='http://peterklipfel.com/tags'>Tags</a>
+	<a href='http://peterklipfel.com/about'>About</a>
+
+	
+
+	
+	<a class="cta" href="http://peterklipfel.com/index.xml">Subscribe</a>
+	
+</nav>
+
+
+        <section id="wrapper" class="post">
+            <article>
+                <header>
+                    <h1>
+                        Building proteins
+                    </h1>
+                    <h2 class="headline">
+                    Mar 7, 2020 13:41
+                    · 602 words
+                    · 3 minute read
+                      <span class="tags">
+                      
+                      </span>
+                    </h2>
+                </header>
+                
+                  
+                    <div id="toc">
+                      <nav id="TableOfContents">
+<ul>
+<li><a href="#overview">Overview</a></li>
+<li><a href="#amino-acids">Amino acids</a></li>
+<li><a href="#proteins">Proteins</a>
+<ul>
+<li><a href="#amino-acid-residues">Amino acid residues</a></li>
+</ul></li>
+<li><a href="#enzymes">Enzymes</a></li>
+</ul>
+</nav>
+                    </div>
+                  
+                
+                <section id="post-body">
+                    
+
+<h1 id="overview">Overview</h1>
+
+<p>I&rsquo;ve been wondering about the differences between proteins and enzymes, and thought it would be good to start from first principles. In this post, I wanted to talk broadly about how proteins are made from DNA.</p>
+
+<h1 id="amino-acids">Amino acids</h1>
+
+<p>DNA is made of strings like GCCCGTAATAGTACATTACGA; This is translated in triplets into amino acids, and groups of amino acids produce proteins. So, if we grouped this into triplets, it would look like: (GCC)(CGT)(AAT)(AGT)(ACA)(TTA)(CGA). There are 22 known amino acids. Conveniently, this is less than the number of letters in the alphabet, so we assign each amino acid a letter of the alphabet. Unfortunately, this was not a well planned system, so the names of the amino acids do not follow all the letters of the alphabet. The missing letters are B, J, X, Z. These letters have been repurposed to communicate ambiguity.</p>
+
+<p>I don&rsquo;t think it&rsquo;s paricularly important to know these, but because there are only 4 of them, here is what they mean.</p>
+
+<ul>
+<li>X means &ldquo;this could be any amino acid&rdquo;</li>
+<li>B means that it&rsquo;s either D or N</li>
+<li>J means that it&rsquo;s either I or L</li>
+<li>Z means that it&rsquo;s either E or Q</li>
+</ul>
+
+<p>If we return now to the original DNA sequence that I <del>mentioned</del> made up, we can use the new letters to shorten the sequence into the amino acid representation of it after it has been transcribed. That sequence would be translated into ARNSTLR. Note that CGA and CGT both code for R - some amino acids have multiple representations. Sometimes, nucleotide sequences will be accompanied by their amino acid translations. They will often look like:</p>
+
+<pre><code class="language-bash">gcccgtaatagtacattacga
+ A  R  N  S  T  L  R 
+</code></pre>
+
+<p>This can be useful for seeing the structure of proteins at a glance if you&rsquo;re looking at a sequence in a genome browser. For example, some amino acid sequences are recognition sites for other proteins.</p>
+
+<p>A subtle, but important point: DNA is <em>not</em> a protein. The groupings of nucleotides (A, C, G, T) are useful for understanding what the DNA codes for; but the groupings of nucleotides are not themselves amino acids. They need to be transcribed in order to become amino acids.</p>
+
+<h1 id="proteins">Proteins</h1>
+
+<p>Now that we have an understanding of amino acids, it makes more sense to say that a protein is a grouping of amino acids. A protein may require thousands of amino acids to be created.</p>
+
+<p>Unfortunately, it&rsquo;s not quite this simple. proteins aren&rsquo;t quite as simple as mooshing a bunch of amino acids together. Proteins are actually chains of amino acid residues, not amino acids.</p>
+
+<h2 id="amino-acid-residues">Amino acid residues</h2>
+
+<p>The difference between amino acids and their residues is that the residues don&rsquo;t actually have the amino acid part in them. In the figure below, the amino acid part is the top part shared by all the structures. It ends at the NH2. The remainder, where the differences are is the residue. Combinbing these creates proteins.</p>
+
+<figure>
+    <img src="/amino_acids.svg"
+         alt="amino acids" width="100%"/> <figcaption>
+            <h4>amino acids</h4>
+        </figcaption>
+</figure>
+
+
+<h1 id="enzymes">Enzymes</h1>
+
+<p>When a protein acts as a catalyzing agent in a biological process, it is referred to as an enzyme. To be clear, an enzyme is a special type of protein.  This can lead to some confusion sometimes because a protein may act as a catalyzing agent in one circumstance, but not in another.</p>
+
+<p>I was initially confused by the difference between proteins and enzymes. Some places seemed to use them interchangeably, and others spoke of them as if there was a distinction.  Enzymes are a class of proteins. They are generally used as part of metabolism in sales.</p>
+
+<p>I wills save the details of various kinds of enzymes for a follow-on post.</p>
+
+                </section>
+            </article>
+
+            
+
+            
+
+            
+
+            <footer id="footer">
+    
+        <div id="social">
+
+	
+	
+    <a class="symbol" href="https://www.github.com/peterklipfel">
+        <i class="fa fa-github-square"></i>
+    </a>
+    
+
+
+</div>
+
+    
+    <p class="small">
+    
+       © Copyright 2020
+       <br>
+       <i class="fa fa-flask" aria-hidden="true"></i> Peter Klipfel
+    
+    </p>
+</footer>
+
+        </section>
+
+        <script src="http://peterklipfel.com/js/jquery-3.3.1.min.js"></script>
+<script src="http://peterklipfel.com/js/main.js"></script>
+<script src="http://peterklipfel.com/js/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+
+<script>
+(function(f, a, t, h, o, m){
+a[h]=a[h]||function(){
+(a[h].q=a[h].q||[]).push(arguments)
+};
+o=f.createElement('script'),
+m=f.getElementsByTagName('script')[0];
+o.async=1; o.src=t; o.id='fathom-script';
+m.parentNode.insertBefore(o,m)
+})(document, window, 'https://cdn.usefathom.com/tracker.js', 'fathom');
+fathom('set', 'siteId', 'ASDYIXMC');
+var fathomExcludeHostnames = [
+  'localhost',
+  'web.archive.org'
+];
+if (fathomExcludeHostnames.indexOf(window.location.hostname) === -1) {
+    fathom('trackPageview');
+  }
+
+</script>
+
+
+    </body>
+</html>
