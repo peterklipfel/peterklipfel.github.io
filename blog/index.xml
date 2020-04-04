@@ -6,10 +6,19 @@
     <description>Recent content in Blogs on Peter Klipfel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 07 Mar 2020 13:41:12 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 29 Mar 2020 20:37:42 -0400</lastBuildDate>
     
 	<atom:link href="http://peterklipfel.com/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Immortal cell lines</title>
+      <link>http://peterklipfel.com/blog/immortal_cell_lines/</link>
+      <pubDate>Sun, 29 Mar 2020 20:37:42 -0400</pubDate>
+      
+      <guid>http://peterklipfel.com/blog/immortal_cell_lines/</guid>
+      <description>Immortal cell lines are immensely useful to research. They allow us to produce fully differentiated cells in high quantities.</description>
+    </item>
     
     <item>
       <title>Building proteins</title>
