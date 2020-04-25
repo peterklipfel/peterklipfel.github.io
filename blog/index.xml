@@ -6,10 +6,19 @@
     <description>Recent content in Blogs on Peter Klipfel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 11 Apr 2020 16:12:02 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 25 Apr 2020 11:52:57 -0400</lastBuildDate>
     
 	<atom:link href="http://peterklipfel.com/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Cryopreservation</title>
+      <link>http://peterklipfel.com/blog/cryopreservation/</link>
+      <pubDate>Sat, 25 Apr 2020 11:52:57 -0400</pubDate>
+      
+      <guid>http://peterklipfel.com/blog/cryopreservation/</guid>
+      <description>Saving cells for future use is extermely useful. In this post, I go over a basic cryopreservation technique</description>
+    </item>
     
     <item>
       <title>MAP kinase</title>
