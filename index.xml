@@ -6,10 +6,19 @@
     <description>Recent content on Peter Klipfel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 25 Apr 2020 11:52:57 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 09 May 2020 09:18:20 -0400</lastBuildDate>
     
 	<atom:link href="http://peterklipfel.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Growing neurons: Part 1 (Overview)</title>
+      <link>http://peterklipfel.com/blog/growing_neurons/</link>
+      <pubDate>Sat, 09 May 2020 09:18:20 -0400</pubDate>
+      
+      <guid>http://peterklipfel.com/blog/growing_neurons/</guid>
+      <description>This is the first in a series of blog posts about what it takes to grow neuronal cultures.</description>
+    </item>
     
     <item>
       <title>Cryopreservation</title>
