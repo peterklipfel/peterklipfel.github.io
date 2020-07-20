@@ -6,13 +6,23 @@
     <description>Recent content on Peter Klipfel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 09 May 2020 09:18:20 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 20 Jun 2020 21:12:22 -0700</lastBuildDate>
     
 	<atom:link href="http://peterklipfel.com/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Growing neurons: Part 1 (Overview)</title>
+      <title>Cell Lysis</title>
+      <link>http://peterklipfel.com/blog/cell_lysis/</link>
+      <pubDate>Sat, 20 Jun 2020 21:12:22 -0700</pubDate>
+      
+      <guid>http://peterklipfel.com/blog/cell_lysis/</guid>
+      <description>Overview Cells are just pockets of proteins in a bubble of fat. You may know fat by the way that it sticks to your pans after you&amp;rsquo;re done cooking. It&amp;rsquo;s the layer of grease that coats your cookware. Typically, you can&amp;rsquo;t just rinse the grease away, you need an agent that breaks up the grease.
+Broadly speaking, cells are made up of similar stuff to the grease that&amp;rsquo;s on your plates and pans.</description>
+    </item>
+    
+    <item>
+      <title>Growing neurons Overview</title>
       <link>http://peterklipfel.com/blog/growing_neurons/</link>
       <pubDate>Sat, 09 May 2020 09:18:20 -0400</pubDate>
       
