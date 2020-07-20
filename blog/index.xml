@@ -6,10 +6,19 @@
     <description>Recent content in Blogs on Peter Klipfel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 20 Jun 2020 21:12:22 -0700</lastBuildDate>
+    <lastBuildDate>Sat, 18 Jul 2020 20:01:11 -0700</lastBuildDate>
     
 	<atom:link href="http://peterklipfel.com/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>How I manage my notes</title>
+      <link>http://peterklipfel.com/blog/taking_notes/</link>
+      <pubDate>Sat, 18 Jul 2020 20:01:11 -0700</pubDate>
+      
+      <guid>http://peterklipfel.com/blog/taking_notes/</guid>
+      <description>I have spent a long time trying to find the right practice for taking notes, and I think I finally found a method that I like</description>
+    </item>
     
     <item>
       <title>Cell Lysis</title>

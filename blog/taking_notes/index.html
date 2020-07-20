@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<meta name="author" content="Peter Klipfel">
+		<meta name="description" content="My minimalistic portal to the world">
+		<meta name="generator" content="Hugo 0.59.1" />
+		<title>How I manage my notes &middot; Peter Klipfel</title>
+		<link rel="shortcut icon" href="http://peterklipfel.com/images/favicon.ico">
+		<link rel="stylesheet" href="http://peterklipfel.com/css/style.css">
+		<link rel="stylesheet" href="http://peterklipfel.com/css/highlight.css">
+
+		
+		<link rel="stylesheet" href="http://peterklipfel.com/css/font-awesome.min.css">
+		
+
+		
+		<link href="http://peterklipfel.com/index.xml" rel="alternate" type="application/rss+xml" title="Peter Klipfel" />
+		
+
+		
+	</head>
+
+    <body>
+       <nav class="main-nav">
+	
+	
+		<a href='http://peterklipfel.com/'> <span class="arrow">←</span>Home</a>
+	
+  
+	<a href='http://peterklipfel.com/tags'>Tags</a>
+	<a href='http://peterklipfel.com/about'>About</a>
+
+	
+
+	
+	<a class="cta" href="http://peterklipfel.com/index.xml">Subscribe</a>
+	
+</nav>
+
+
+        <section id="wrapper" class="post">
+            <article>
+                <header>
+                    <h1>
+                        How I manage my notes
+                    </h1>
+                    <h2 class="headline">
+                    Jul 18, 2020 20:01
+                    · 1201 words
+                    · 6 minute read
+                      <span class="tags">
+                      
+                      </span>
+                    </h2>
+                </header>
+                
+                  
+                    <div id="toc">
+                      <nav id="TableOfContents">
+<ul>
+<li><a href="#tl-dr">Tl;dr</a></li>
+<li><a href="#taking-notes-is-hard">Taking notes is hard</a></li>
+<li><a href="#what-i-m-looking-for">What I&rsquo;m looking for</a></li>
+<li><a href="#my-solution">My solution</a>
+<ul>
+<li><a href="#markdown">Markdown</a></li>
+<li><a href="#daily-notes">Daily Notes</a>
+<ul>
+<li><a href="#daily-note-format">Daily Note Format</a></li>
+</ul></li>
+<li><a href="#vim-mode">Vim Mode</a></li>
+<li><a href="#synchronization">Synchronization</a></li>
+<li><a href="#blog">Blog</a></li>
+<li><a href="#zettelkasten">Zettelkasten</a></li>
+</ul></li>
+<li><a href="#the-future">The future</a></li>
+</ul>
+</nav>
+                    </div>
+                  
+                
+                <section id="post-body">
+                    
+
+<h1 id="tl-dr">Tl;dr</h1>
+
+<p>I use obsidian for desktop, IA Writer for mobile, and keep everything in sync with Dropbox.</p>
+
+<h1 id="taking-notes-is-hard">Taking notes is hard</h1>
+
+<p>During college, while I was freelancing, I developed a habit of taking notes. This has served me well since then, and I have tried to manage my notes in more ways than I can remember.</p>
+
+<p>The ones that I can remember trying are: Google Keep, Google Docs, Evernote, Jupyter notebooks, Aha!, Omni-notes, Notability, Apple notes, Nebo, vim + github, and a bunch of miscellaneous mobile apps.</p>
+
+<h1 id="what-i-m-looking-for">What I&rsquo;m looking for</h1>
+
+<p>After finding the solution that works for me, I&rsquo;ve discovered what my requirements are:
+- <strong>Portable format</strong>: I want to be able to load my notes in any system. Potential candidates include docx files, markdown, and pdfs
+- <strong>Access everywhere</strong>: I want to be able to see and read my notes after they&rsquo;ve been synchronized
+- <strong>Vim mode</strong>: When I&rsquo;m at a computer, I&rsquo;d like to be able to use vim mode to modify and update my notes
+- <strong>Metadata</strong>: I need a good way of associating metadata with my notes like the time the note was taken and a way of linking notes</p>
+
+<p>But I also want to be able to use notes for other things:
+- I have lots of miscellaneous thoughts during the day and need a way to capture them
+- I like to keep track of quotes
+- I often track things like grocery lists
+- I like to keep track of todo items</p>
+
+<p>And it would be nice if the apps that I took my notes on had a dark mode.</p>
+
+<h1 id="my-solution">My solution</h1>
+
+<p>I think I may have finally found the solution that works for me, and I want to share my setup just in case it works for other people too. The keystone to my new note-taking strategy is Obsidian. I absolutely love this note-taking app, and whole-heartedly recommend it to anyone. I hope that it continues to be the simple, elegant, and powerful editor that it is today. Disclaimer: I&rsquo;m not affiliated with them in any way, and don&rsquo;t have anything to gain by promoting them.</p>
+
+<h2 id="markdown">Markdown</h2>
+
+<p>When I have used other formats, I always run into corner cases where the note system breaks down. For example, I have always wanted to have my blog posts in the same place as the rest of my notes, but they always seem to get out of sync - I&rsquo;ll write the original post in one place, and then have to copy it back and forth between systems. This led to my notes and my blog getting out of sync (the blog that you&rsquo;re reading is my third &ldquo;real&rdquo; attempt at getting my blog going).</p>
+
+<p>But markdown has become universal. I can write things in a single format, and load them into any system for viewing. There are a bunch of apps that allow for markdown authoring. I like IA Writer for mobile, and I use Obsidian on all my computers to keep things in sync.</p>
+
+<h2 id="daily-notes">Daily Notes</h2>
+
+<p>Obsidian gives me a convenient format to put all my day-to-day ramblings, todos, and notes called &ldquo;Daily Notes&rdquo;. I have a folder called &ldquo;Daily Notes&rdquo;, and each file in this folder is the date of the note (for example, 2020-08-10.md). I also use Obsidian&rsquo;s Daily Note Template to automatically generate a note with my default format.</p>
+
+<p>Obsidian handles this all for my automatically, but the system is simple, so I can do it manually pretty quickly if I want to, say, plan for the next day while I&rsquo;m laying in bed.</p>
+
+<h3 id="daily-note-format">Daily Note Format</h3>
+
+<p>My daily notes contain the following sections specified as markdown headings:
+- <strong>TODO</strong>: I put all the tasks that I want to get done &ldquo;today&rdquo; in this section
+    - <strong>Stretch</strong>: As things come up during the day, I often put them in this section, and move them to the next day if I don&rsquo;t get to them
+- <strong>Personal Goals</strong>: I generally have personal objectives that I am actively  working on. This is where I track those objectives, and their output (metrics, notes, links, etc.)
+- <strong>Business Goals</strong>: I like to track the ongoing goals at my job separately from my personal goals.
+- <strong>Accomplished</strong>: It&rsquo;s nice to lay in bed at night and make a list the things that I got done that day
+- <strong>Daily thoughts</strong>: This section is freeform, and is more like my &ldquo;journaling&rdquo; section. As I&rsquo;m wandering through the day, for example, and I have the next billion dollar business idea, solutions to world hunger, or breakthroughs on artificial general intelligence, I&rsquo;ll add them to this section.</p>
+
+<h2 id="vim-mode">Vim Mode</h2>
+
+<p>Despite how cumbersome it was to constantly have to boot jupyter notebooks, I loved being able to write my notes with a vim mode. I am so much more efficient when I can take note in vim mode. For example, if I&rsquo;m on a call, I can simply press enter to separaet things in a list, and then make the list when there is a lull in noteworthy conversation by using <code>ctrl+v</code> + move up several lines + <code>shift+i</code> + &ldquo;-&rdquo;.</p>
+
+<h2 id="synchronization">Synchronization</h2>
+
+<p>I use dropbox to synchronize files across all my devices. My only gripe with Dropbox is that it <em>really</em> wants you to use a folder called &ldquo;Dropbox&rdquo;, which is kind of annoying. But it&rsquo;s available in all places, and it does a good job of synchronization, so it&rsquo;s fine.</p>
+
+<h2 id="blog">Blog</h2>
+
+<p>The blog that you&rsquo;re reading right now is generated with markdown files, so I cloned the repository into my dropbox, and now I can modify and write blog posts in the same place that I take my notes! This was a huge win for me.</p>
+
+<p>I&rsquo;m still looking for a way to automatically deploy my site when I push to master in order to remove the need to run a deploy script (and have the necessary dependencies in place to do so). Netlify looks like it might be a good solution to this problem, but I haven&rsquo;t set it up yet.</p>
+
+<h2 id="zettelkasten">Zettelkasten</h2>
+
+<p>I didn&rsquo;t know there was a word for this style of taking notes until it became trendy a few months ago, but I find that prepending notes with dates is extremely useful for cases where I might have had multiple meetings on the same subject, or where I met with the same person multiple times, but do not have a regularly scheduled meeting with them (I put those in dedicated &ldquo;1x1&rdquo; notes).</p>
+
+<h1 id="the-future">The future</h1>
+
+<p>I haven&rsquo;t figured out a good way to use tags yet. I&rsquo;ve tried it in the past, and I end up with more tags than I do notes, making the tags less useful than full-text search. Side note: full text search comes for free with markdown because it&rsquo;s such a simple file format. Most applications can do it, or you can just do a <code>grep</code> if you have a terminal open.</p>
+
+<p>Also, I still haven&rsquo;t figured out a great way to link notes to each other. Folders do a pretty good job of grouping similar notes, and I haven&rsquo;t found a compelling use case for linking notes. But it&rsquo;s nice to have solutions in the tool box in case problems arise.</p>
+
+                </section>
+            </article>
+
+            
+
+            
+
+            
+
+            <footer id="footer">
+    
+        <div id="social">
+
+	
+	
+    <a class="symbol" href="https://www.github.com/peterklipfel">
+        <i class="fa fa-github-square"></i>
+    </a>
+    
+
+
+</div>
+
+    
+    <p class="small">
+    
+       © Copyright 2020
+       <br>
+       <i class="fa fa-flask" aria-hidden="true"></i> Peter Klipfel
+    
+    </p>
+</footer>
+
+        </section>
+
+        <script src="http://peterklipfel.com/js/jquery-3.3.1.min.js"></script>
+<script src="http://peterklipfel.com/js/main.js"></script>
+<script src="http://peterklipfel.com/js/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+
+<script>
+(function(f, a, t, h, o, m){
+a[h]=a[h]||function(){
+(a[h].q=a[h].q||[]).push(arguments)
+};
+o=f.createElement('script'),
+m=f.getElementsByTagName('script')[0];
+o.async=1; o.src=t; o.id='fathom-script';
+m.parentNode.insertBefore(o,m)
+})(document, window, 'https://cdn.usefathom.com/tracker.js', 'fathom');
+fathom('set', 'siteId', 'ASDYIXMC');
+var fathomExcludeHostnames = [
+  'localhost',
+  'web.archive.org'
+];
+if (fathomExcludeHostnames.indexOf(window.location.hostname) === -1) {
+    fathom('trackPageview');
+  }
+
+</script>
+
+
+    </body>
+</html>
